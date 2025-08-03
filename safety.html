@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Safety Hub - Protecting Our Future</title>
+    <link rel="stylesheet" href="safety.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="notification-container" id="notificationContainer"></div>
+    
+    <header>
+        <div class="logo-container">
+            <div class="logo"><i class="fas fa-shield-alt"></i></div>
+            <h1>Student Safety Hub</h1>
+        </div>
+        <div class="theme-toggle">
+            <input type="checkbox" id="theme-switch" class="theme-switch">
+            <label for="theme-switch" class="theme-switch-label">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </label>
+        </div>
+        <nav>
+            <div class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#safety-resources">Resources</a></li>
+                <li><a href="#emergency-contacts">Emergency Contacts</a></li>
+                <li><a href="#safety-tips">Safety Tips</a></li>
+                <li><a href="#report-incident">Report Incident</a></li>
+                <li><a href="#safety-map">Safety Map</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Protecting Students <span class="highlight">Every Step</span> of the Way</h2>
+                <p>Your comprehensive resource for campus safety information, emergency protocols, and personal safety strategies.</p>
+                <div class="hero-buttons">
+                    <a href="#safety-resources" class="btn primary-btn">Safety Resources</a>
+                    <a href="#emergency-contacts" class="btn secondary-btn">Emergency Contacts</a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-box">
+                    <div class="stat-number" id="campusSafetyScore">0</div>
+                    <div class="stat-label">Campus Safety Score</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number" id="incidentsResolved">0</div>
+                    <div class="stat-label">Incidents Resolved</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number" id="safetyWorkshops">0</div>
+                    <div class="stat-label">Safety Workshops</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="safety-resources" class="resources-section">
+            <h2 class="section-title">Safety <span class="highlight">Resources</span></h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="resource-icon"><i class="fas fa-book"></i></div>
+                    <h3>Safety Guides</h3>
+                    <p>Comprehensive guides for personal safety on and off campus.</p>
+                    <a href="#" class="resource-link">Download Guides</a>
+                </div>
+                <div class="resource-card">
+                    <div class="resource-icon"><i class="fas fa-video"></i></div>
+                    <h3>Training Videos</h3>
+                    <p>Learn safety protocols and preventive measures through video tutorials.</p>
+                    <a href="#" class="resource-link">Watch Videos</a>
+                </div>
+                <div class="resource-card">
+                    <div class="resource-icon"><i class="fas fa-calendar-alt"></i></div>
+                    <h3>Safety Workshops</h3>
+                    <p>Join our upcoming workshops to enhance your safety awareness.</p>
+                    <a href="#" class="resource-link">See Schedule</a>
+                </div>
+                <div class="resource-card">
+                    <div class="resource-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Safety Apps</h3>
+                    <p>Mobile applications designed to keep students safe in various situations.</p>
+                    <a href="#" class="resource-link">Download Apps</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="emergency-contacts" class="emergency-section">
+            <h2 class="section-title">Emergency <span class="highlight">Contacts</span></h2>
+            <div class="emergency-container">
+                <div class="emergency-card">
+                    <div class="card-header">
+                        <div class="emergency-icon"><i class="fas fa-ambulance"></i></div>
+                        <h3>Medical Emergency</h3>
+                    </div>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="label">Phone:</span>
+                            <span class="value">911</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="label">Campus Health:</span>
+                            <span class="value">555-123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="label">Poison Control:</span>
+                            <span class="value">800-222-1222</span>
+                        </div>
+                    </div>
+                    <button class="quick-call-btn">Quick Call</button>
+                </div>
+                
+                <div class="emergency-card">
+                    <div class="card-header">
+                        <div class="emergency-icon"><i class="fas fa-user-shield"></i></div>
+                        <h3>Campus Security</h3>
+                    </div>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="label">Emergency:</span>
+                            <span class="value">555-911-0000</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="label">Non-Emergency:</span>
+                            <span class="value">555-123-7890</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="label">Email:</span>
+                            <span class="value">security@campus.edu</span>
+                        </div>
+                    </div>
+                    <button class="quick-call-btn">Quick Call</button>
+                </div>
+                
+                <div class="emergency-card">
+                    <div class="card-header">
+                        <div class="emergency-icon"><i class="fas fa-heart"></i></div>
+                        <h3>Mental Health Support</h3>
+                    </div>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="label">Crisis Hotline:</span>
+                            <span class="value">800-273-8255</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="label">Counseling Center:</span>
+                            <span class="value">555-123-9876</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="label">Text Line:</span>
+                            <span class="value">Text HOME to 741741</span>
+                        </div>
+                    </div>
+                    <button class="quick-call-btn">Quick Call</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="safety-tips" class="tips-section">
+            <h2 class="section-title">Safety <span class="highlight">Tips</span></h2>
+            <div class="tabs-container">
+                <div class="tabs">
+                    <div class="tab active" data-tab="campus">Campus Safety</div>
+                    <div class="tab" data-tab="online">Online Safety</div>
+                    <div class="tab" data-tab="transportation">Transportation</div>
+                    <div class="tab" data-tab="personal">Personal Safety</div>
+                </div>
+                
+                <div class="tab-content">
+                    <div class="tab-pane active" id="campus-tab">
+                        <h3>Campus Safety Tips</h3>
+                        <ul class="tips-list">
+                            <li><i class="fas fa-check-circle"></i> Be aware of your surroundings at all times</li>
+                            <li><i class="fas fa-check-circle"></i> Use the buddy system when walking at night</li>
+                            <li><i class="fas fa-check-circle"></i> Know the locations of emergency phones on campus</li>
+                            <li><i class="fas fa-check-circle"></i> Keep your dorm room locked at all times</li>
+                            <li><i class="fas fa-check-circle"></i> Report suspicious activities to campus security</li>
+                            <li><i class="fas fa-check-circle"></i> Attend campus safety orientations and workshops</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-pane" id="online-tab">
+                        <h3>Online Safety Tips</h3>
+                        <ul class="tips-list">
+                            <li><i class="fas fa-check-circle"></i> Use strong, unique passwords for different accounts</li>
+                            <li><i class="fas fa-check-circle"></i> Be cautious about what personal information you share online</li>
+                            <li><i class="fas fa-check-circle"></i> Update your devices and applications regularly</li>
+                            <li><i class="fas fa-check-circle"></i> Be wary of phishing attempts and suspicious emails</li>
+                            <li><i class="fas fa-check-circle"></i> Use two-factor authentication when available</li>
+                            <li><i class="fas fa-check-circle"></i> Connect to secure Wi-Fi networks or use a VPN</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-pane" id="transportation-tab">
+                        <h3>Transportation Safety Tips</h3>
+                        <ul class="tips-list">
+                            <li><i class="fas fa-check-circle"></i> Use campus shuttle services when available</li>
+                            <li><i class="fas fa-check-circle"></i> Share your location with trusted friends when traveling</li>
+                            <li><i class="fas fa-check-circle"></i> Verify the identity of ride-share drivers before entering the vehicle</li>
+                            <li><i class="fas fa-check-circle"></i> Have your keys ready before approaching your car</li>
+                            <li><i class="fas fa-check-circle"></i> Avoid distractions like texting while walking</li>
+                            <li><i class="fas fa-check-circle"></i> Use well-lit and populated routes, especially at night</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-pane" id="personal-tab">
+                        <h3>Personal Safety Tips</h3>
+                        <ul class="tips-list">
+                            <li><i class="fas fa-check-circle"></i> Trust your instincts – if something feels wrong, it probably is</li>
+                            <li><i class="fas fa-check-circle"></i> Keep emergency contacts easily accessible</li>
+                            <li><i class="fas fa-check-circle"></i> Consider carrying personal safety devices like alarms or whistles</li>
+                            <li><i class="fas fa-check-circle"></i> Stay hydrated and be cautious with alcohol consumption</li>
+                            <li><i class="fas fa-check-circle"></i> Learn basic self-defense techniques</li>
+                            <li><i class="fas fa-check-circle"></i> Keep friends informed about your whereabouts</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="report-incident" class="report-section">
+            <h2 class="section-title">Report an <span class="highlight">Incident</span></h2>
+            <div class="report-container">
+                <div class="report-info">
+                    <h3>Why Report?</h3>
+                    <p>Reporting incidents helps us maintain a safe campus environment. Your report will be handled with confidentiality and care.</p>
+                    <div class="report-types">
+                        <div class="report-type">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <h4>Safety Concerns</h4>
+                        </div>
+                        <div class="report-type">
+                            <i class="fas fa-bullhorn"></i>
+                            <h4>Harassment</h4>
+                        </div>
+                        <div class="report-type">
+                            <i class="fas fa-building"></i>
+                            <h4>Facility Issues</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="report-form-container">
+                    <form id="incidentReportForm" class="report-form">
+                        <div class="form-group">
+                            <label for="reportType">Type of Incident</label>
+                            <select id="reportType" required>
+                                <option value="">Select Incident Type</option>
+                                <option value="safety">Safety Concern</option>
+                                <option value="harassment">Harassment</option>
+                                <option value="facility">Facility Issue</option>
+                                <option value="theft">Theft</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="incidentLocation">Location</label>
+                            <input type="text" id="incidentLocation" placeholder="Where did it happen?" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="incidentDate">Date & Time</label>
+                            <input type="datetime-local" id="incidentDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="incidentDescription">Description</label>
+                            <textarea id="incidentDescription" placeholder="Describe what happened..." rows="4" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="incidentPhoto">Upload Photos (if any)</label>
+                            <input type="file" id="incidentPhoto" accept="image/*">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactInfo">Your Contact Information (optional)</label>
+                            <input type="text" id="contactInfo" placeholder="Email or phone number">
+                        </div>
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="anonymousReport">
+                            <label for="anonymousReport">Submit anonymously</label>
+                        </div>
+                        <button type="submit" class="submit-btn">Submit Report</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="safety-map" class="map-section">
+            <h2 class="section-title">Campus <span class="highlight">Safety Map</span></h2>
+            <div class="map-container">
+                <div class="map-legend">
+                    <div class="legend-item">
+                        <span class="legend-color emergency-phone"></span>
+                        <span class="legend-text">Emergency Phones</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color security-office"></span>
+                        <span class="legend-text">Security Offices</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color health-center"></span>
+                        <span class="legend-text">Health Centers</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color safe-route"></span>
+                        <span class="legend-text">Recommended Safe Routes</span>
+                    </div>
+                </div>
+                <div id="campusMap" class="campus-map">
+                    <!-- Campus map will be loaded here using JavaScript -->
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <p>Interactive campus map showing safety features and resources</p>
+                        <button id="loadMapBtn" class="load-map-btn">Load Map</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="safety-courses" class="courses-section">
+            <h2 class="section-title">Safety <span class="highlight">Training</span></h2>
+            <div class="courses-container">
+                <div class="course-card">
+                    <div class="course-image">
+                        <i class="fas fa-hand-rock"></i>
+                        <div class="course-badge">Popular</div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Self-Defense Basics</h3>
+                        <div class="course-details">
+                            <span><i class="fas fa-clock"></i> 3 hours</span>
+                            <span><i class="fas fa-users"></i> In Person</span>
+                        </div>
+                        <p>Learn practical self-defense techniques to protect yourself in various situations.</p>
+                        <div class="course-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-value">4.5/5</span>
+                        </div>
+                        <button class="enroll-btn">Register Now</button>
+                    </div>
+                </div>
+                
+                <div class="course-card">
+                    <div class="course-image">
+                        <i class="fas fa-first-aid"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3>First Aid & CPR</h3>
+                        <div class="course-details">
+                            <span><i class="fas fa-clock"></i> 5 hours</span>
+                            <span><i class="fas fa-users"></i> In Person</span>
+                        </div>
+                        <p>Essential first aid and CPR skills that could help you save lives in emergency situations.</p>
+                        <div class="course-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-value">5/5</span>
+                        </div>
+                        <button class="enroll-btn">Register Now</button>
+                    </div>
+                </div>
+                
+                <div class="course-card">
+                    <div class="course-image">
+                        <i class="fas fa-shield-virus"></i>
+                        <div class="course-badge">New</div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Digital Security</h3>
+                        <div class="course-details">
+                            <span><i class="fas fa-clock"></i> 2 hours</span>
+                            <span><i class="fas fa-laptop"></i> Online</span>
+                        </div>
+                        <p>Protect your digital identity and personal information from cyber threats and scams.</p>
+                        <div class="course-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-value">4/5</span>
+                        </div>
+                        <button class="enroll-btn">Register Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2 class="section-title">Contact <span class="highlight">Us</span></h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>We're Here to Help</h3>
+                    <p>Have questions about campus safety? Reach out to our team for assistance.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                            <div class="contact-detail">
+                                <h4>Phone</h4>
+                                <p>555-123-4567</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-detail">
+                                <h4>Email</h4>
+                                <p>safety@campus.edu</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-detail">
+                                <h4>Office</h4>
+                                <p>Student Center, Room 101</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                            <div class="contact-detail">
+                                <h4>Hours</h4>
+                                <p>Mon-Fri: 8am - 5pm</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="contactName">Name</label>
+                            <input type="text" id="contactName" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Email</label>
+                            <input type="email" id="contactEmail" placeholder="Your email address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject">Subject</label>
+                            <select id="contactSubject" required>
+                                <option value="">Select a subject</option>
+                                <option value="question">General Question</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="workshop">Workshop Inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Message</label>
+                            <textarea id="contactMessage" placeholder="Your message" rows="4" required></textarea>
+                        </div>
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="newsletter">
+                            <label for="newsletter">Subscribe to safety newsletter</label>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="emergency-button">
+        <div class="emergency-icon">
+            <i class="fas fa-exclamation-circle"></i>
+        </div>
+        <span>Emergency</span>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <div class="logo"><i class="fas fa-shield-alt"></i></div>
+                    <h2>Student Safety Hub</h2>
+                </div>
+                <p>Dedicated to creating a safe learning environment for all students.</p>
+                <div class="footer-social">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#safety-resources">Resources</a></li>
+                    <li><a href="#emergency-contacts">Emergency Contacts</a></li>
+                    <li><a href="#safety-tips">Safety Tips</a></li>
+                    <li><a href="#report-incident">Report Incident</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Resources</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Safety Guides</a></li>
+                    <li><a href="#">Training Videos</a></li>
+                    <li><a href="#">Download Safety Apps</a></li>
+                    <li><a href="#">Workshop Calendar</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Subscribe</h3>
+                <p>Get the latest safety updates and resources.</p>
+                <form class="footer-subscribe">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Student Safety Hub. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Accessibility</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="emergencyModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2><i class="fas fa-exclamation-triangle"></i> Emergency Contact</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="emergency-options">
+                    <div class="emergency-option" data-number="911">
+                        <div class="option-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="option-info">
+                            <h3>911</h3>
+                            <p>Police, Fire, Medical</p>
+                        </div>
+                    </div>
+                    
+                    <div class="emergency-option" data-number="555-123-4567">
+                        <div class="option-icon"><i class="fas fa-shield-alt"></i></div>
+                        <div class="option-info">
+                            <h3>Campus Security</h3>
+                            <p>555-123-4567</p>
+                        </div>
+                    </div>
+                    
+                    <div class="emergency-option" data-number="555-987-6543">
+                        <div class="option-icon"><i class="fas fa-first-aid"></i></div>
+                        <div class="option-info">
+                            <h3>Health Center</h3>
+                            <p>555-987-6543</p>
+                        </div>
+                    </div>
+                    
+                    <div class="emergency-option" data-number="800-273-8255">
+                        <div class="option-icon"><i class="fas fa-heart"></i></div>
+                        <div class="option-info">
+                            <h3>Crisis Hotline</h3>
+                            <p>800-273-8255</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="current-call">
+                    <p>Your location will be shared with emergency services.</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="cancelEmergency" class="cancel-btn">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="safety.js"></script>
+</body>
+</html>
